@@ -1,7 +1,7 @@
 // 1️⃣ Cargar primero la API del chat
 // Usamos loadScript para cargar dinámicamente el archivo "chat-api.js"
 // Esto permite que el widget solo se inicialice cuando la API esté lista.
-loadScript("/widget/js/chat-api.js").then(() => {
+loadScript("../widget/js/chat-api.js").then(() => {
 
     // 2️⃣ Luego cargar el HTML del widget
     // Hacemos un fetch del archivo "chat-widget.html", lo convertimos a texto
