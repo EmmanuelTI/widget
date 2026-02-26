@@ -1,0 +1,533 @@
+<html lang="es">
+
+<head>
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.uttt.edu.mx/images/icono.png">
+
+
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">  -->
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-main.js" charset="UTF-8" crossorigin="*"></script>
+    <script src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-vendor.js" charset="UTF-8" crossorigin="*"></script>
+    <script src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-chunk-vendors.js" charset="UTF-8"
+        crossorigin="*"></script>
+    <script src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-chunk-common.js" charset="UTF-8"
+        crossorigin="*"></script>
+    <script src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-runtime.js" charset="UTF-8"
+        crossorigin="*"></script>
+    <script src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-app.js" charset="UTF-8" crossorigin="*"></script>
+    <script async="" src="https://embed.tawk.to/635c2bbadaff0e1306d48962/1ggg0lkj3" charset="UTF-8"
+        crossorigin="*"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <title>Universidad Tecnológica de Tula-Tepeji</title>
+    <!-- <meta name="description" content="Conoce la información de transparencia de la Secretaría Ejecutiva de la Política Pública Estatal" /> -->
+    <!-- <meta name="csrf-param" content="authenticity_token" /> -->
+    <!-- <meta name="csrf-token" content="5xMoMUPoxaKcR6F4kMAIHKMhqEy7uq2ElUYOTPTmfvP/KWGMvokFGg7iExRxu1+BRxioDGTS+Pc9n9giF6U3fA==" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" media="all" href="https://www.uttt.edu.mx/assets/application.css" data-turbolinks-track="true">
+
+    <!--pagina ut-->
+    <link href="https://www.uttt.edu.mx/css/agency.min.css" rel="stylesheet">
+    <link href="https://www.uttt.edu.mx/css/half-slider.css" rel="stylesheet">
+    <link href="https://www.uttt.edu.mx/styles/ihover.css" rel="stylesheet">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>  -->
+    <!-- <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>  -->
+    <style>
+        .my-fixed-item2 {
+            position: fixed;
+            min-height: 200px;
+            width: 300px;
+            text-align: center;
+            word-wrap: break-word;
+            z-index: 1200;
+            
+        }
+
+        .my-fixed-item {
+            position: fixed;
+            min-height: 200px;
+            width: 370px;
+            text-align: center;
+            word-wrap: break-word;
+            z-index: 99999;
+            right: 0px;
+        }
+
+        .zoom {
+            transition: .3s ease;
+            -moz-transition: 1.5s ease;
+            /* Firefox */
+            -webkit-transition: .3s ease;
+            /* Chrome - Safari */
+            -o-transition: 1.5s ease;
+            /* Opera */
+        }
+
+        .zoom:hover {
+            transform: scale(1.3);
+            -moz-transform: scale(1.1);
+            /* Firefox */
+            -webkit-transform: scale(1.1);
+            /* Chrome - Safari */
+            -o-transform: scale(1.1);
+            /* Opera */
+            -ms-transform: scale(1.1);
+            /* IE9 */
+        }
+
+        .borde {
+            border-radius: 6px;
+        }
+
+        .go-top {
+            position: fixed;
+            bottom: 2em;
+            right: 2em;
+            text-decoration: none;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: 12px;
+            padding: 1em;
+            display: none;
+        }
+
+        .go-top:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        button {
+            border: none;
+            background: #3a7999;
+            color: #f2f2f2;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            position: relative;
+            box-sizing: border-box;
+            transition: all 500ms ease;
+        }
+
+        button:hover {
+            background: rgba(0, 0, 0, 0);
+            color: #3a7999;
+            box-shadow: inset 0 0 0 3px #3a7999;
+        }
+
+        .hover15 figure {
+            position: relative;
+        }
+
+        .hover15 figure::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, .2);
+            border-radius: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        .hover15 figure:hover::before {
+            -webkit-animation: circle .75s;
+            animation: circle .75s;
+        }
+
+        @-webkit-keyframes circle {
+            0% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            100% {
+                width: 200%;
+                height: 200%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes circle {
+            0% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            100% {
+                width: 200%;
+                height: 200%;
+                opacity: 0;
+            }
+        }
+    </style>
+    <!-- para banner emergente -->
+    <script async="">
+
+        $(document).ready(function () {
+            //$('#ModalVideo').modal('show')
+            //alert("");
+
+            // <!--  descomentar linea siguiente para banner emergente electoral -->
+            // alertDGC('h');
+            //<!-- esta funcion para los copos -->
+            //&nbsp;$.fn.snow();
+
+
+        });
+
+
+    </script>
+    <script language="javascript" async="">
+        function popupWin() {
+            $('#ModalVideo').modal('show');
+        }
+        function windowProp(text) {
+            newWindow = window.open('', 'newWin', 'width=300,height=100');
+            newWindow.document.write(text);
+        }
+        function closeWin(newWindow) {
+            newWindow.close();
+        }
+
+        function alertDGC(mensaje) {
+            var dgcTiempo = 500
+            var ventanaCS = '<div class="dgcAlert dgcCerrar" ><div class="dgcVentana"><div class="dgcCerrar"></div><div class="dgcMensaje">  <img src="https://www.uttt.edu.mx/Electoral2024.png" width=100%  class="img-responsive "> </div></div></div>';
+            $('body').append(ventanaCS);
+            var alVentana = $('.dgcVentana').height() + 100;
+            var alNav = $(window).height() + 100;
+            var supNav = $(window).scrollTop();
+            $('.dgcAlert').css('height', $(document).height() + 200);
+            $('.dgcVentana').css('top', ((alNav - alVentana) / 2 + supNav - 300) + 'px');
+            $('.dgcAlert').css('display', 'block');
+            $('.dgcAlert').animate({ opacity: 1 }, dgcTiempo);
+            $('.dgcCerrar,.dgcAceptar').click(function (e) {
+                $('.dgcAlert').animate({ opacity: 0 }, dgcTiempo);
+                setTimeout("$('.dgcAlert').remove()", dgcTiempo);
+            });
+        }
+
+    </script>
+
+    <style>
+        .dgcAlert {
+            top: 0;
+            position: absolute;
+            width: 100%;
+            display: block;
+            height: 1000px;
+            background: url(https://www.dgcmedia.es/recursosExternos/fondoAlert.png) repeat;
+            text-align: center;
+            opacity: 0;
+            display: none;
+            z-index: 999999999999999;
+        }
+
+        .dgcAlert .dgcVentana {
+            width: 70%;
+            background: white;
+            min-height: 350px;
+            position: relative;
+            margin: 0 auto;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .dgcAlert .dgcVentana .dgcCerrar {
+            height: 25px;
+            width: 25px;
+            float: right;
+            cursor: pointer;
+            background: url(https://www.dgcmedia.es/recursosExternos/cerrarAlert.jpg) no-repeat center center;
+        }
+
+        .dgcAlert .dgcVentana .dgcMensaje {
+            margin: 0 auto;
+            padding-top: 0px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .dgcAlert .dgcVentana .dgcAceptar {
+            background: #09C;
+            bottom: 20px;
+            display: inline-block;
+        }
+    </style>
+
+    <!-- estilos para los copos -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script src="jquery.snow.js"></script>
+    <style>
+        #flake {
+            color: #fff;
+            position: absolute;
+            font-size: 25px;
+            top: -50px;
+        }
+    </style>-->
+
+    <script charset="utf-8" src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-chunk-2d0d2b7c.js"></script>
+    <script charset="utf-8" src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-chunk-2d224aff.js"></script>
+    <script charset="utf-8" src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-chunk-3ea2c7ce.js"></script>
+    <script charset="utf-8" src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-chunk-2d0da3af.js"></script>
+    <script charset="utf-8" src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-chunk-4fe9d5dd.js"></script>
+    <script charset="utf-8" src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-chunk-7941cc06.js"></script>
+    <script charset="utf-8" src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-chunk-6289ff8e.js"></script>
+    <script charset="utf-8" src="https://embed.tawk.to/_s/v4/app/698c2d84cd1/js/twk-chunk-2d0c8092.js"></script>
+    <style type="text/css">
+    #n5rcdt4046t41771276324472 {
+        outline: none !important;
+        visibility: visible !important;
+        resize: none !important;
+        box-shadow: none !important;
+        overflow: visible !important;
+        background: none !important;
+        background-color: transparent !important;
+
+        opacity: 1 !important;
+        filter: alpha(opacity=100) !important;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+        -moz-opacity: 1 !important;
+        -khtml-opacity: 1 !important;
+
+        position: fixed !important;
+        top: auto !important;
+        right: 0px !important;
+        bottom: 0px !important;
+        left: auto !important;
+
+        border: 0 !important;
+        border-radius: unset !important;
+
+        min-height: 0px !important;
+        min-width: 0px !important;
+        max-height: none !important;
+        max-width: none !important;
+
+        padding: 0px !important;
+        margin: 0px !important;
+
+        width: auto !important;
+        height: auto !important;
+
+        display: none !important;
+        z-index: 2000000000 !important;
+
+        cursor: none !important;
+        float: none !important;
+
+        pointer-events: auto !important;
+        clip: auto !important;
+        color-scheme: light !important;
+
+        -moz-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        -o-transition-property: none !important;
+        transition-property: none !important;
+
+        transform: none !important;
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+    }
+
+    #n5rcdt4046t41771276324472.widget-hidden {
+        display: none !important;
+    }
+
+    #n5rcdt4046t41771276324472.widget-visible {
+        display: block !important;
+    }
+
+    @media print {
+        #n5rcdt4046t41771276324472.widget-visible {
+            display: none !important;
+        }
+    }
+</style>
+
+</head>
+
+<body id="page-top" class="modal-open" style="padding-right: 15px;">
+    <!-- este div para los copos -->
+    <!--  <div id="flake">&#10052;</div>-->
+    <!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/635c2bbadaff0e1306d48962/1ggg0lkj3';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+ 
+
+    <div class="portfolio-modal modal fade in" id="Alumnos" tabindex="-1" role="dialog" aria-hidden="false"
+        style="display: block;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>Regresar
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h3>
+                                    Alumnos
+                                </h3>
+                                <div class="col-lg-12"><br></div>
+
+
+
+
+                                <div class="row">
+                                    <div class="col-lg-12 ">
+                                        <div class="col-lg-2  portfolio-item col-md-offset-1">
+                                            <div class="card h-100">
+                                                SIGE
+                                                <a href="https://www.uttt.edu.mx/sige/alumnos/"><img
+                                                        class="card-img-top img-responsive" src="https://www.uttt.edu.mx/img/sige.jpeg" alt=""
+                                                        height="150"> </a>
+                                            </div>
+                                        </div>
+                                         <div class="col-lg-2  portfolio-item col-md-offset-1">
+                                            <div class="card h-100">
+                                                CARDIBOT
+                                                <a href="http://localhost:4000/login"><img
+                                                        class="card-img-top img-responsive" src="/widget/assets/CardiBot.png" alt=""
+                                                        height="150"> </a>  
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2  portfolio-item col-md-offset-1">
+                                            <div class="card h-100">
+                                                SEDAA
+                                                <a href="https://sedaa.uttt.edu.mx/" target="_blank"><img
+                                                        class="card-img-top img-responsive" src="https://www.uttt.edu.mx/img/sedaa.jpg" alt=""
+                                                        height="150"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2  portfolio-item col-md-offset-1">
+                                            <div class="card h-100">
+                                                Biblioteca Virtual
+                                                <a href="https://www.uttt.edu.mx/BibliotecaVirtual"><img
+                                                        class="card-img-top img-responsive" src="https://www.uttt.edu.mx/img/biblioteca.png"
+                                                        alt="" height="100"> </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 ">
+                                        <div class="col-lg-3  portfolio-item col-md-offset-1">
+                                            <div class="card h-100 ">
+                                                EdViUTyP
+                                                <a href="https://mmixta.dgutyp.mx"><img
+                                                        class="card-img-top img-responsive" src="https://www.uttt.edu.mx/img/mmixta.png" alt=""
+                                                        height="150"></a>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-3  portfolio-item col-md-offset-1">
+                                            <div class="card h-100">
+                                                Recursos Digitales
+                                                <a href="https://www.uttt.edu.mx/RecursosDigitales/Default"><img
+                                                        class="card-img-top img-responsive" src="https://www.uttt.edu.mx/img/recursos.jpeg"
+                                                        alt="" height="150"> </a>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col-lg-3  portfolio-item col-md-offset-1">
+                                            <div class="card h-100 ">
+                                                <a href="http://www.uttt.edu.mx/G4U" target="_blank">
+                                                    G4U
+                                                    <img class="card-img-top " src="https://www.uttt.edu.mx/img/g4u.png" alt="" height="150">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3  portfolio-item col-md-offset-1">
+                                            <div class="card h-100 ">
+                                                <a href="https://utttepeji.bibliotecasdigitales.com/home?category=1"
+                                                    target="_blank">
+                                                    Biblioteca Digital Alfaomega
+                                                    <img class="card-img-top " src="https://www.uttt.edu.mx/img/alfa.png" alt="" height="150">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3  portfolio-item col-md-offset-1">
+                                            <div class="card h-100 ">
+                                                EdViUTyP (8vo)
+                                                <a href="https://utdistancia.uttt.edu.mx/UTaDistancia"><img
+                                                        class="card-img-top img-responsive"
+                                                        src="https://www.uttt.edu.mx/img/modeloEjecutivo.png" alt="" height="150"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3  portfolio-item col-md-offset-1">
+                                            <div class="card h-100 ">
+
+                                                <a href="https://utdistancia.uttt.edu.mx/UTaDistancia"><img
+                                                        class="card-img-top img-responsive" src="https://www.uttt.edu.mx/img/Posgrado.png"
+                                                        alt="" height="150"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 ">
+                                        <div class="col-lg-12 ortfolio-item">
+                                            <div class="card h-100">
+                                                <a href="#"><img class="card-img-top img-responsive"
+                                                        src="https://www.uttt.edu.mx/img/Alumnos3.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div href="../uttt.html " class="col-lg-12"><button class="btn btn-primary" data-dismiss="modal"
+                                        type="button"> Cerrar</button></div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
