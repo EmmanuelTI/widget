@@ -6,7 +6,7 @@ loadScript("/widget/js/chat-api.js").then(() => {
     // 2️⃣ Luego cargar el HTML del widget
     // Hacemos un fetch del archivo "chat-widget.html", lo convertimos a texto
     // y lo insertamos al final del body del documento.
-    fetch("/widget/chat-widget.html")
+    fetch("../widget/chat-widget.html")
         .then(res => res.text())
         .then(html => {
             document.body.insertAdjacentHTML("beforeend", html);
