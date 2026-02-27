@@ -45,7 +45,7 @@ function initChatWidget() {
         logo.style.display = "none";
 
         // ✅ CARGAR FAQs AQUÍ (momento correcto)
-        loadFAQsIntoChat();
+        loadFAQsIntoChat(sendMessage);
     };
 
     // ❌ Cerrar chat
@@ -69,7 +69,7 @@ function initChatWidget() {
 
         if (messageInput.disabled) {
     addBotMessage("⚠️ El servicio no está disponible en este momento.");
-    return;
+    return; 
 }
 
 
@@ -116,45 +116,40 @@ function initChatWidget() {
 // ===============================
 // FAQs
 // ===============================
-async function loadFAQsIntoChat() {
-    const chatBody = document.getElementById("chat-body");
-    if (!chatBody) return;
+// ===============================
+// FAQs - JS SOLO INSERTA PREGUNTAS (SIN ESTILOS)
+// ===============================
+async function loadFAQsIntoChat(sendMessage) {
+    const questionsContainer = document.getElementById("faq-questions-container");
+    if (!questionsContainer) return;
 
-    // ⛔ evitar duplicados
-    if (document.querySelector(".faq-btn")) return;
+    questionsContainer.innerHTML = "";
 
-    const faqs = await getActiveFaqs(); // ✅ NOMBRE CORRECTO
-    if (!faqs.length) return;
+    const faqs = await getActiveFaqs();
+    if (!faqs || faqs.length === 0) return;
 
-    const msg = document.createElement("div");
-    msg.className = "message bot";
-
-    const content = document.createElement("div");
-    content.className = "message-content";
-
-    const title = document.createElement("div");
-    title.className = "message-text";
-    title.innerText = "Preguntas frecuentes:";
-
-    content.appendChild(title);
-
-    faqs.forEach(faq => {
-        const btn = document.createElement("button");
-        btn.className = "faq-btn";
-        btn.textContent = faq.question;
-
-        btn.onclick = () => {
+    faqs.forEach((faq) => {
+        // CREAR SOLO LA ESTRUCTURA BÁSICA
+        const faqItem = document.createElement("div");
+        faqItem.className = "faq-item";  // ← LA MAGIA ESTÁ AQUÍ
+        
+        const questionText = document.createElement("span");
+        questionText.textContent = faq.question;
+        
+        faqItem.appendChild(questionText);
+        
+        // Evento click
+        faqItem.addEventListener("click", () => {
             const input = document.getElementById("message-input");
-            input.value = faq.question;
-            input.focus();
-        };
-
-        content.appendChild(btn);
+            if (input) {
+                input.value = faq.question;
+                sendMessage();
+                input.focus();
+            }
+        });
+        
+        questionsContainer.appendChild(faqItem);
     });
-
-    msg.appendChild(content);
-    chatBody.appendChild(msg);
-    chatBody.scrollTop = chatBody.scrollHeight;
 }
 
 // ===============================

@@ -5,7 +5,7 @@ const API_BASE = "https://cardiobot-production.up.railway.app";
 const ASK_URL = `${API_BASE}/ask`;
 const AUTH_URL = `${API_BASE}/auth/anonymous`;
 const FAQS_URL = `${API_BASE}/faqs/active`;
-const HEALTH_URL = `${API_BASE}/health`;
+const HEALTH_URL = `${API_BASE}/health`;    
 
 // ===============================
 // SESIÓN ANÓNIMA
